@@ -23,12 +23,7 @@ class Solution {
             }
             cur=cur.next;
         }
-        if(list1 != null){
-            cur.next = list1;
-        }
-        if(list2 != null){
-            cur.next =list2;
-        }
+        cur.next=(list1!=null)?list1:list2;
         return dnode.next;
     }
 }
